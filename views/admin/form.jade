@@ -1,0 +1,12 @@
+extends ../layouts.jade
+block contenido 
+  div(class="col-md-4 center-block no-float")
+    h1 ADMINISTRADORES
+    form(method="POST" action="/admin" style="margin_top:1.5em;")
+      div(class="form-group")
+        label CONTRASEÑA 
+        input(type="password" name="password" placeholder="type pass" class="form-control")
+      div(class="form-group text-right")
+        input(type="submit" class="btn btn-info" value="ENVIAR")
+                
+      

@@ -1,0 +1,45 @@
+body{
+    
+    text-align: center;
+    background-color: #b9b;
+    
+    text-decoration-color: #fff;
+    font-size: 2em;
+    
+}
+.margen-arriba{
+    
+    margin-top: 20px;
+}
+.roboto{
+    font-family: 'Roboto', sans-serif;
+}
+ul a li{
+    list-style: none;
+}
+.color{
+    color:#54977C;
+}
+.sin-lista li{
+    list-style-type: none;
+}
+.sin-lista{
+    margin: 0px;
+    padding: 0px;
+}
+
+.largo{
+    padding: 5px 10px;
+    background-color: #888;
+    
+}
+.inline-block{
+    float: none;
+    display: inline-block;
+}
+.retraso1{
+    animation-delay: 2s;
+}
+
+
+

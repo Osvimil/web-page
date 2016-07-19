@@ -1,0 +1,23 @@
+extends ../layouts.jade
+block contenido    
+    div(class="col-md-5 center-block inline-block margen-arriba text-left")
+      h1 AGREGAR CURSOS
+      form(method="POST" action="/menu" style="margin_top:1.5em;" enctype="multipart/form-data")
+        div(class="form-group")
+          label NOMBRE
+          input(type="text" name="nombre" placeholder="type your name" class="form-control")
+        div(class="form-group")
+          label DESCRIPCION
+          textarea(name="descripcion" placeholder="write a description" class="form-control")
+        div(class="form-group")
+          label COSTO 
+          input(type="number" name="costo" placeholder="pricing" class="form-control")
+        div(class="form-group")
+          label PRODUCT IMAGE
+          input(type="file" name="upload_image")
+        div(class="form-group")
+          label CONTRASEÑA
+          input(type="password" name="contrasena" placeholder="write you pass" class="form-control")
+        div(class="form-group text-right")
+          input(type="submit" class="btn btn-info" value="SAVE")
+      

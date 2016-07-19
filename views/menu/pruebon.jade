@@ -1,0 +1,14 @@
+extends ../layouts.jade
+block contenido 
+  h2(class="roboto") MENÚ
+  p lenguajes a tu alcance
+  each lenguajes in language
+    div(class="col-md-4 col-xs-12 inline-block")
+      h3(class="roboto")= language.titulo
+      img(src="#{lenguajes.imagenUrl}" class="col-xs-7 col-md-4 sin-lista")
+      p(style="margin-top:13em;") #[small(class="lato small") #{lenguajes.precioGeneral}$]  
+      
+      
+      
+       
+  

@@ -1,0 +1,27 @@
+extends ../layouts.jade
+block contenido 
+  h1 PANEL DE LA ADMINISTRACION
+  table(class="table")
+    caption productos almacenados
+    thead
+      tr
+        th #
+        th Nombre
+        th Descripcion
+        th Costo
+        th ImagenUrl
+        th ACCIONES
+      tbody
+        each lenguajes in language
+          tr
+            td= lenguajes.id
+            td= lenguajes.titulo
+            td= lenguajes.descripcion
+            td= lenguajes.precioGeneral
+            td 
+            a(href="#{lenguajes.imagenUrl}" class="btn") VER IMAGEN 
+            td eliminar - editar
+             
+          
+       
+      
